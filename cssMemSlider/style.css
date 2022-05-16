@@ -71,6 +71,7 @@ body {
   color: white;
   font-family: Merriweather, serif;
   margin: 1rem 2rem;
+  text-align: start;
   transition: 1s;
 }
 
