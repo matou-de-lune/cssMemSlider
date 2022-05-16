@@ -1,11 +1,12 @@
 @import url("http://fonts.googleapis.com/css?family=Merriweather:400,400i,700");
 
 body {
+  margin: 0;
   background-color: lightgrey;
 }
 
 .wrapper {
-  width: 80vw;
+  width: 92vmin; /*80vw;*/
   max-width: 64rem;
   min-width: 30rem;
   margin: 0 auto;
@@ -20,7 +21,10 @@ body {
 }
 
 .container {
-  height: 60vw;
+  height: 69vmin;
+  /* width: 100%; */
+  /* height: 60vw; */
+  /* padding-top: 30%; */
   max-height: 48rem;
   min-height: 22.5rem;
   display: grid;
@@ -148,23 +152,23 @@ body {
   opacity: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), screen and (max-height: 540px) {
   html {
     font-size: 75%;
-    background-color: red;
   }
 
   .container {
-    display: grid;
+    /* display: grid; */
     grid-template-areas:
+      "s s s"
       "s s s"
       "l l l"
       "t t t";
-    grid-template-rows: 6fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 3fr 0.5fr 0.5fr;
+    /* grid-template-columns: 1fr 1fr 1fr;
     gap: 0.1rem;
     border: 0.3rem solid #3e2723;
     border-radius: 1rem;
-    background-color: #4e342e;
+    background-color: #4e342e; */
   }
 }
